@@ -4,8 +4,81 @@
     <meta charset="UTF-8" />
     <title>Instagram-ElisaGDR</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    .content {
+      height: 200%;
+      animation: moveUpDown 7s infinite;
+    }
+    @keyframes moveUpDown {
+      0% {
+        transform: translateY(0%);
+      }
+      50% {
+        transform: translateY(-120%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+          window.scrollTo(0, document.body.scrollHeight);
+          setTimeout(function() {
+            window.scrollTo(0, 0);
+          }, 5000);
+        });
+      </script>
 </head>
 <body>
-    <p>Hola Elisa</p>
+    <div class="content">
+    <header>
+        <h1>Breathe Code Photo Feed</h1>
+    </header>
+    <main>
+        <div id="First">
+            <div class="miniHeader"></div>
+               <div class="one">My first photo</div>
+               <div class="two">12/14</div>
+            <div class="miniMain">
+                <img src="imag1.png" alt="">
+            </div>
+            <div class="miniFooter">This is my first photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #BreatheCode</div>
+        </div>
+        <div id="Second">
+            <div class="miniHeader"></div>
+               <div class="one">Some cute thing</div>
+               <div class="two">12/17</div>
+            <div class="miniMain">
+                <img id="img2" src="imag2.png" alt="">
+            </div>
+            <div class="miniFooter">The internet approves this cute dog...#BreatheCode</div>
+        </div>
+        <div id="Third">
+            <div class="miniHeader"></div>
+               <div class="one">There's a paparazzi around</div>
+               <div class="two">12/17</div>
+            <div class="miniMain">
+                <img src="imag3.png" alt="">
+            </div>
+            <div class="miniFooter">This is me waiting for the screen to show my awesome first webside made at #BreatheCode</div>
+        </div>
+        <div id="Fourth">
+            <div class="miniHeader"></div>
+               <div class="one">And of course... food!</div>
+               <div class="two">12/17</div>
+            <div class="miniMain">
+                <img src="imag4.png" alt="">
+            </div>
+            <div class="miniFooter">Because no photo feed is coolwithout some food on it! #BreatheCode</div>
+        </div>
+    </main>
+   <footer>   </footer>
+    </div>
 </body>
 </html>

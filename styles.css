@@ -1,3 +1,97 @@
-p {
-    color: green;
+body {
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ } 
+ header {
+    background-color: white;
+    text-align: center;
+    clear: both;
+    overflow: hidden;
+    height: 50px;
+}
+header h1 {
+    width: 500px;
+    margin-top: 4px;
+    margin-left: 430px;   
+    text-align: left;
+}
+main {
+    width: 500px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: lightgray;
+    align-content: center;
+   
+}
+#First, #Third {
+    width:500px;
+    height: 450px;
+    background-color: white;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    position: relative;
+   }
+#Second, #Fourth {
+    width:500px;
+    height: 500px;
+    background-color: white;
+    align-items: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    position: relative;
+   }
+
+.miniHeader {
+    width: 500px;
+    height: 10%;
+    top: 0;
+    position: absolute;
+}
+.one {
+    font-size: medium;
+    font-weight: bold;
+    left: 3px;
+    position: absolute;
+    top: 0;
+    margin: 10px;
+}
+.two {
+    font-size: small;
+    right: 3px;
+    position: absolute;
+    top: 0;
+    color: grey;
+    margin: 10px;
+}
+.miniMain img {
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+    position: absolute;
+    top: 20px;
+}
+#img2 {
+    top: 40px;
+}
+.miniFooter {
+    border: 1px;
+    border-color: lightgray;
+    font-size: small;
+    left: 3px;
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+}
+footer {
+    height: 30px;
+    background-color: lightgray;
+    bottom: 0;
+    clear: both;
+    overflow: hidden;
 }
